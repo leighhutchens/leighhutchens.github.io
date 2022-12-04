@@ -2,10 +2,12 @@
 ---
 layout: page
 title: Happy Puppies
+tags:
+  - puppies
+  - happy
 ---
-Happ
+Here is some happy puppies!
 
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NzcxNjE1OF19
+eyJoaXN0b3J5IjpbLTE3NjMzNjE0NjVdfQ==
 -->
