@@ -5,8 +5,9 @@ tags:
   - puppies
   - happy
 ---
-Here is some happy puppies!
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjMzNjE0NjVdfQ==
--->
+Here are some happy puppies!
+
+![Happy Puppies!](assets/20221204_201400_happy-puppies-warren-photographic.jpg)
+
+![Less than happy puppies...](assets/20221204_201412_raising-happy-healthy-puppies.jpg)
