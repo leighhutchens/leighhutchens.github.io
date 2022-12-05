@@ -13,3 +13,5 @@ Here are some happy puppies!
 ![Less than happy puppies...](assets/20221204_201412_raising-happy-healthy-puppies.jpg)
 
 Leigh is awesome! This is a test. 
+
+I wonder if something like this would work for documentation down the road. Hmmmm...
