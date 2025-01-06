@@ -1,37 +1,75 @@
----
-layout: default
-title: Home
----
+<!doctype html>
+<html>
+  <head>
+    <title>Leigh Taylor Hutchens</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+      html,body {
+        font-family: 'Raleway';
+        padding: 3em 2em;
+        font-size: 100%;
+        background: #111;
+        color: #888;
+      }
+      .content {
+        display: flex;
+        align-items: center;
+        min-height: 60vh;
+      }
+      .footer {
+        display: flex;
+        margin-top: auto;
+        font-size: 1.0em;
+      }
+      .footer i {
+        padding: 15px;
+      }
+      .center {
+        justify-content: center;
+      }
+      .left {
+        justify-content: flex-start;
+      }
+      h1,h2 {
+        font-weight: 200;
+        margin: 0.4em 0;
+      }
+      h1 {
+        color: #bbb;
+        font-size: 5em;
+      }
+      h2 {
+        color: #888;
+        font-size: 3em;
+      }
+      a {
+        color: #666;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #eee;
+      }
+    </style>
+  </head>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+  <body>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <div class="content center">
+      <div class="left">
+        <h1 class="animate__animated animate__fadeInDown">Leigh Taylor Hutchens</h1>
+        <h2 class="animate__animated animate__fadeInDown animate__delay-2s">Content specialist living in <a href="https://www.google.com/maps/place/Stockholm" target="_blank">Stockholm, Sweden <i class="fas fa-map-marker-alt"></i></a></h2>
+      </div>
+    </div>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+    <div class="footer center">
+      <a href="https://www.linkedin.com/in/leightaylorhutchens" target="_blank" alt="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="https://www.instagram.com/leigh.hutchens" target="_blank" alt="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="mailto:leigh@leightaylorhutchens.com" target="_blank" alt="E-Mail"><i class="fas fa-envelope fa-2x"></i></a>
+      <a href="tel:+46762871136" target="_blank" alt="Phone"><i class="fas fa-phone-volume fa-2x"></i></a>
+      <a href="sms:+46762871136" target="_blank" alt="Text Message"><i class="fas fa-sms fa-2x"></i></a>
+    </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+  </body>
+</html>
